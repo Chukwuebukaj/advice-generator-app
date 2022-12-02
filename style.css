@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary-cyan: hsl(193, 38%, 86%);
+    --color-primary-green: hsl(150, 100%, 66%);
+
+    --color-neutral-gb: hsl(217, 19%, 38%);
+    --color-neutral-dgb: hsl(217, 19%, 24%);
+    --color-neutral-db: hsl(218, 23%, 16%);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-neutral-db);
+    width: 100vw;
+    height: 100vh;
+}
+
+.advice-slip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 30vw;
+    height: 15rem;
+    background-color: var(--color-neutral-dgb);
+    border-radius: 10px;
+}
+
+.title {
+    text-align: center;
+    color: var(--color-primary-green);
+    margin-bottom: -10%;
+    margin-top: 7%;
+    width: 10rem;
+    height: 2rem;
+    font-size: .7rem;
+    letter-spacing: .3rem;
+}
+
+.content {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: var(--color-primary-cyan);
+    text-align: center;
+    width: 80%;
+    height: max-content;
+    font-size: 20px;
+    margin-top: 10%;
+}
+
+#get-advice-btn {
+    background-color: var(--color-primary-green);
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    margin-top: -1.5rem;
+}
+
+#get-advice-btn:hover {
+    box-shadow: 0 0 25px var(--color-primary-green);
+    cursor: pointer;
+}
+
+#get-advice-btn img {
+    width: 50%;
+}
+
+.pattern-divider {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 10%;
+    height: max-content;
+}
+
+.pattern-divider img {
+    width: 100%;
+}
+
+@media screen and (max-width:760px) {
+    .advice-slip {
+        width: 90vw;
+    }
+
+    .pattern-divider {
+        margin-bottom: 15%;
+    }
+
+    .content {
+        font-size: 16px;
+    }
+}
