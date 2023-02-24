@@ -11,7 +11,7 @@ function getAdvice() {
     .then((response) => response.json())
     .then((data) => {
       titleDisplay.innerText = `ADVICE #${JSON.stringify(data.slip.id)}`;
-      contentDisplay.innerText = JSON.stringify(data.slip.advice);
+      contentDisplay.innerText = JSON.stringify(data.slip.advice).replace(/\\/g, '');
     })
     .catch((error) => console.log(error));
 }
